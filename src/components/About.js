@@ -12,7 +12,7 @@ class About extends Component {
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+      // var about = this.props.resumeBasicInfo.description;
     }
 
     return (
@@ -70,17 +70,21 @@ class About extends Component {
                   </div>
                   <div
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
-                    style={{
+                    style={{ 
                       height: "auto",
                       fontSize: "132%",
-                      lineHeight: "200%",
+                      lineHeight: "200%"
                     }}
                   >
                     <br />
                     <span className="wave">{hello}!</span>
                     <br />
                     <br />
-                    {about}
+                    My name is Labib and I'm currently a 4th year student at the University of Toronto studying Math and Computer Science. In my spare time besides programming, I partake in:
+                    <br />• Photography 📷
+                    <br />• Muay Thai 👊
+                    <br />• Video Games 🎮
+                    <br />I am very enthusiastic about game development and would love to work in the industry to allow me to pursue my passion. 
                   </div>
                 </div>
               </div>
