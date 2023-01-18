@@ -6,9 +6,5 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* GLOBAL VARIABLES */
-
-window.$primaryLanguage = 'en';
-window.$secondaryLanguage = 'pl';
-
 ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.register();
