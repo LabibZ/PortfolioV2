@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
+import AwesomeSlider from "react-awesome-slider";
+import AwesomeSliderStyles from "../scss/light-slider.scss";
+import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
+      const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+      var youtube = this.props.data.youtube;
+      var github = this.props.data.github;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -24,6 +30,11 @@ class ProjectDetailsModal extends Component {
             </li>
           );
         });
+        if (this.props.data.images) {
+          var img = images.map((elem, i) => {
+            return <div key={i} data-src={elem} />;
+          });
+        }
       }
     }
     return (
@@ -59,6 +70,13 @@ class ProjectDetailsModal extends Component {
                 data-inline="false"
               ></span>
             </div>
+            <AwesomeSlider
+              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+              animation="scaleOutAnimation"
+              className="slider-image"
+            >
+              {img}
+            </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
@@ -72,6 +90,32 @@ class ProjectDetailsModal extends Component {
                 >
                   <i
                     className="fas fa-external-link-alt"
+                    style={{ marginLeft: "10px" }}
+                  ></i>
+                </a>
+              ) : null}
+              {youtube ? (
+                <a
+                  href={youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-href"
+                >
+                  <i
+                    className="fab fa-youtube"
+                    style={{ marginLeft: "10px" }}
+                  ></i>
+                </a>
+              ) : null}
+              {github ? (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-href"
+                >
+                  <i
+                    className="fab fa-github"
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>
