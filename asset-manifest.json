@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/labibz.github.io/static/css/main.4127d54c.chunk.css",
+    "main.js": "/labibz.github.io/static/js/main.caa69976.chunk.js",
+    "main.js.map": "/labibz.github.io/static/js/main.caa69976.chunk.js.map",
+    "runtime-main.js": "/labibz.github.io/static/js/runtime-main.1fc2a89c.js",
+    "runtime-main.js.map": "/labibz.github.io/static/js/runtime-main.1fc2a89c.js.map",
+    "static/css/2.d64471e2.chunk.css": "/labibz.github.io/static/css/2.d64471e2.chunk.css",
+    "static/js/2.ca43c8ba.chunk.js": "/labibz.github.io/static/js/2.ca43c8ba.chunk.js",
+    "static/js/2.ca43c8ba.chunk.js.map": "/labibz.github.io/static/js/2.ca43c8ba.chunk.js.map",
+    "index.html": "/labibz.github.io/index.html",
+    "precache-manifest.ab7f052df7becd12d253db1cbe21a8d3.js": "/labibz.github.io/precache-manifest.ab7f052df7becd12d253db1cbe21a8d3.js",
+    "service-worker.js": "/labibz.github.io/service-worker.js",
+    "static/css/2.d64471e2.chunk.css.map": "/labibz.github.io/static/css/2.d64471e2.chunk.css.map",
+    "static/css/main.4127d54c.chunk.css.map": "/labibz.github.io/static/css/main.4127d54c.chunk.css.map",
+    "static/js/2.ca43c8ba.chunk.js.LICENSE.txt": "/labibz.github.io/static/js/2.ca43c8ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fc2a89c.js",
+    "static/css/2.d64471e2.chunk.css",
+    "static/js/2.ca43c8ba.chunk.js",
+    "static/css/main.4127d54c.chunk.css",
+    "static/js/main.caa69976.chunk.js"
+  ]
+}
