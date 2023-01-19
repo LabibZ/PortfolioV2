@@ -76,7 +76,6 @@ class About extends Component {
                       lineHeight: "200%"
                     }}
                   >
-                    <br />
                     <span className="wave">{hello}!</span>
                     <br />
                     <br />
